@@ -31,8 +31,8 @@ public struct Resource<T> where T: Decodable {
     self.headers = newHeaders
     
     self.decode = {
-      if let empty = Empty() as? T {
-        return empty
+      if let response = EmptyResponse() as? T {
+        return response
       } else {
         return try jsonDecoder.decode(T.self, from: $0)
       }
