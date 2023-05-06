@@ -26,10 +26,10 @@ Pod::Spec.new do |s|
   s.source           = { :git => 'https://github.com/akxo/apikit.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
-  # s.platform = :osx
-  s.ios.deployment_target = "13"
-  s.osx.deployment_target = "10.15"
-  s.tvos.deployment_target = '13'
+  s.platforms = { :ios => "13.0", :osx => "10.15", :watchos => "6.0", :tvos => "13.0" }
+  # s.ios.deployment_target = "13"
+  # s.osx.deployment_target = "10.15"
+  # s.tvos.deployment_target = '13'
 
   s.source_files = 'APIKit/Sources/**/*'
 
