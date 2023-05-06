@@ -8,7 +8,7 @@
 import Foundation
 
 public struct Resource<T> where T: Decodable {
-  typealias HTTPHeaders = [String: String]
+  public typealias HTTPHeaders = [String: String]
   
   let path: URLPath
   let method: HTTPMethod
@@ -16,7 +16,7 @@ public struct Resource<T> where T: Decodable {
   var params: [String : Any]
   let decode: (Data) throws -> T
   
-  init(jsonDecoder: JSONDecoder,
+  public init(jsonDecoder: JSONDecoder,
        path: String,
        method: HTTPMethod,
        params: [String : Any],
