@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct Resource<T> where T: Decodable {
+public struct Resource<T> where T: Decodable {
   typealias HTTPHeaders = [String: String]
   
   let path: URLPath

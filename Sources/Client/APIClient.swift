@@ -8,14 +8,14 @@
 import Combine
 import Foundation
 
-final class APIClient: Client {
-  let baseUrl: String
+public final class APIClient: Client {
+  public let baseUrl: String
   
-  init(baseUrl: String) {
+  public init(baseUrl: String) {
     self.baseUrl = baseUrl
   }
   
-  func load<T>(resource: Resource<T>, completion: @escaping (Result<T, Error>) -> Void) {
+  public func load<T>(resource: Resource<T>, completion: @escaping (Result<T, Error>) -> Void) {
     let request = URLRequest(baseUrl: baseUrl, resource: resource)
     
     URLSession.shared.dataTask(with: request) { [weak self] data, response, _ in
@@ -30,7 +30,7 @@ final class APIClient: Client {
     }
   }
   
-  func load<T>(resource: Resource<T>) -> AnyPublisher<T, Error> {
+  public func load<T>(resource: Resource<T>) -> AnyPublisher<T, Error> {
     let request = URLRequest(baseUrl: baseUrl, resource: resource)
     
     return URLSession.shared.dataTaskPublisher(for: request)
@@ -39,7 +39,7 @@ final class APIClient: Client {
       .eraseToAnyPublisher()
   }
   
-  func load<T>(resource: Resource<T>) async -> Result<T, Error> {
+  public func load<T>(resource: Resource<T>) async -> Result<T, Error> {
     let request = URLRequest(baseUrl: baseUrl, resource: resource)
     
     do {

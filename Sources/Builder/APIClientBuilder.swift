@@ -7,14 +7,14 @@
 
 import Foundation
 
-final class APIClientBuilder: ClientBuilder {
+public final class APIClientBuilder: ClientBuilder {
   private let baseUrl: String
   
   init(baseUrl: String) {
     self.baseUrl = baseUrl
   }
   
-  func build() -> Client {
+  public func build() -> Client {
     return APIClient(baseUrl: baseUrl)
   }
 }

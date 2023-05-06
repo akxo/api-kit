@@ -7,6 +7,6 @@
 
 import Foundation
 
-protocol ClientBuilder: AnyObject {
+public protocol ClientBuilder: AnyObject {
   func build() -> Client
 }
