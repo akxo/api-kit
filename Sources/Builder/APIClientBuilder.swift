@@ -10,7 +10,7 @@ import Foundation
 public final class APIClientBuilder: ClientBuilder {
   private let baseUrl: String
   
-  init(baseUrl: String) {
+  public init(baseUrl: String) {
     self.baseUrl = baseUrl
   }
   
