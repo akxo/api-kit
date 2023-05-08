@@ -1,7 +1,7 @@
 import XCTest
-@testable import APIKit
+@testable import api_kit
 
-final class APIKitTests: XCTestCase {
+final class apikitTests: XCTestCase {
     func testExample() throws {
         // This is an example of a functional test case.
         // Use XCTAssert and related functions to verify your tests produce the correct

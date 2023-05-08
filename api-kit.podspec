@@ -1,5 +1,5 @@
 #
-# Be sure to run `pod lib lint APIKit.podspec' to ensure this is a
+# Be sure to run `pod lib lint api-kit.podspec' to ensure this is a
 # valid spec before submitting.
 #
 # Any lines starting with a # are optional, but their use is encouraged
@@ -7,8 +7,8 @@
 #
 
 Pod::Spec.new do |s|
-  s.name             = 'APIKit'
-  s.version          = '0.0.1'
+  s.name             = 'api-kit'
+  s.version          = '0.0.2'
   s.summary          = 'networking framework for making api calls'
 
 # This description is used to generate tags and improve search results.
