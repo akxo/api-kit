@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'api-kit'
-  s.version          = '0.0.2'
+  s.version          = '0.0.3'
   s.summary          = 'networking framework for making api calls'
 
 # This description is used to generate tags and improve search results.
@@ -28,17 +28,7 @@ Pod::Spec.new do |s|
   s.swift_version = '5.8'
 
   s.platforms = { :ios => "13.0", :osx => "10.15", :watchos => "6.0", :tvos => "13.0" }
-  # s.ios.deployment_target = "13"
-  # s.osx.deployment_target = "10.15"
-  # s.tvos.deployment_target = '13'
 
   s.source_files = 'Sources/**/*.swift'
-
-  # s.resource_bundles = {
-  #   '${POD_NAME}' => ['${POD_NAME}/Assets/*.png']
-  # }
-
-  # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'Cocoa'
-  # s.dependency 'AFNetworking', '~> 2.3'
+  s.module_name = 'APIKit'
 end
