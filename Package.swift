@@ -26,7 +26,7 @@ let package = Package(
             dependencies: [],
             path: "Sources"),
         .testTarget(
-            name: "apikitTests",
+            name: "api-kitTests",
             dependencies: ["api-kit"],
             path: "Tests"),
     ]
