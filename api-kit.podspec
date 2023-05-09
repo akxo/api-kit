@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'api-kit'
-  s.version          = '0.0.3'
+  s.version          = '0.0.4'
   s.summary          = 'networking framework for making api calls'
 
 # This description is used to generate tags and improve search results.
