@@ -1,4 +1,4 @@
-# apikit
+# api-kit
 a lightweight, flexible, and easy to use networking abstraction layer for making http requests
 
 ## installation
